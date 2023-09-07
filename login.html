@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+    {% include 'cdnlines.html' %}
+</head>
+<body>
+    <center>
+        <h2>Login Page</h2><br>
+        <div class="login">
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset border="10px">
+                    <legend><h4>login here</h4></legend>
+                <label><b>EMAIL</b></label>
+<input type="text" name="email" class="form-control" placeholder="email">
+<input type="text" name="password" class="form-control" placeholder="password">
+<br><br>
+<input type="submit" value="buy now" class="btn btn-lg btn-outline-success">
+<input type="reset" value="cancel" class="btn btn-lg btn-outline-danger">
+<br><br>
+<input type="checkbox" class="form-control">
+<span>remember me</span>
+<br><br>
+Forgot<a href="#">Password</a>
+                </fieldset>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
